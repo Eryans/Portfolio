@@ -1,0 +1,33 @@
+.nav-container{
+    display:none;
+    position: fixed;
+}
+li{
+    list-style: none;
+}
+.hidden{
+    visibility: hidden;
+}
+.up:first-child:last-child::before{
+    align-self: flex-end;
+    margin-right: .5em;
+    display: block;
+    content: "";
+    width: 1px;
+    height:7.5em;
+    background-color: black;
+}
+.down:last-child::after{
+    align-self: flex-start;
+    margin-left: .5em;
+    display: block;
+    content: "";
+    width: 1px;
+    height:7.5em;
+    background-color: black;
+}
+@media screen and (min-width:576px) {
+    .nav-container{
+        display: block;
+    }
+}

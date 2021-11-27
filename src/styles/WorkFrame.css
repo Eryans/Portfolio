@@ -1,0 +1,33 @@
+article{
+    background-color: blue;
+    height:10vh;
+    width:75vw;
+    top:0;
+    left:0;
+    transition: height .5s, width .5s, top 1s ease, right 1s ease;
+}
+.expanded{
+    position: absolute;
+    left:10%;
+    top:10%;
+    height:80%;
+    width:80%;
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width:768px) {
+    article{
+        background-color: blue;
+        height:50vh;
+        width:10vw;
+    }
+    .expanded{
+        position: absolute;
+        left:10%;
+        top:10%;
+        height:80%;
+        width:80%;
+        display: flex;
+        flex-direction: column;
+    }    
+}

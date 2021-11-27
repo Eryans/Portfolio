@@ -1,5 +1,5 @@
 import { Container, Row } from "react-bootstrap";
-import "../styles/Acceuil.css";
+import "../../styles/Acceuil.css";
 
 export default function Acceuil() {
     
@@ -7,7 +7,7 @@ export default function Acceuil() {
     const lastName = "Noir--Vermeulen";
 
     return (
-        <section className="bg-white block-section">
+        <section className="bg-white block-section position-relative">
             <Container className="p-0 title-container">
                 <Row>
                     <span className="col-6 p-0" />

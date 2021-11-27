@@ -1,0 +1,53 @@
+
+.project-container ul{
+    scroll-behavior: smooth;
+    max-height: 80%;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.project-container ul li{
+    margin:0;
+    transition: margin .5s;
+}
+.project-container ul li:nth-child(even){
+    margin-right: 2em;
+}
+.project-container ul li:nth-child(odd){
+    margin-left: 2em;
+}
+#w-title{
+    font-size: 1.5em;
+    width: 65%;
+    text-align: left;
+    position: absolute;
+    left: 0;
+    top:0;
+    margin:.5em;
+    border-bottom: 2px solid rgb(138, 138, 138);
+}
+@media screen and (min-width:768px) {
+    #w-title{
+        font-size: 3em;
+        width:50%;
+    }
+    .project-container ul{
+        overflow: visible;
+    }
+    .project-container ul li:nth-child(even){
+        margin-left: 0;
+        margin-right: 0;
+        margin-top:3em;
+    }
+    .project-container ul li:nth-child(odd){
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3em;
+    }
+    .project-container ul li:nth-child(odd):hover{
+        margin-bottom:6em;
+    }
+    .project-container ul li:nth-child(even):hover{
+        margin-top: 6em;
+    }
+}

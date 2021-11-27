@@ -9,6 +9,7 @@
     font-size: .9em;
     word-break: normal;
 }
+
 .letter{
     transition:font-size .5s, color .2s;
 }

@@ -1,8 +1,6 @@
 import { Nav } from "react-bootstrap";
 import "../styles/NavBar.css";
 import NavButton from "../components/NabButton";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee,faHome,faComment } from "@fortawesome/free-solid-svg-icons";
 
 export default function NavBar({bsPosition, direction, navContent, upOrDown}){
 

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Container, Nav, Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 
 import {
     faLaptop,
@@ -8,9 +8,9 @@ import {
     faAddressBook,
 } from "@fortawesome/free-solid-svg-icons";
 
-import Acceuil from "../components/Acceuil";
-import Work from "../components/Work";
-import Contact from "../components/Contact";
+import Acceuil from "../components/pages/Acceuil";
+import Work from "../components/pages/Work";
+import Contact from "../components/pages/Contact";
 import NavBar from "./NavBar";
 import {
     faGithub,

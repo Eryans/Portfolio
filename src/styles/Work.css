@@ -1,5 +1,5 @@
-
 .project-container ul{
+    padding: 0;
     scroll-behavior: smooth;
     max-height: 80%;
     overflow: scroll;

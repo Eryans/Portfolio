@@ -7,7 +7,7 @@ export default function NavButton(props) {
     return (
         <>
             <p className={`${!isHovered && "hidden"}`}>{props.text}</p>
-            <FontAwesomeIcon icon={props.icon} onPointerEnter={() => setIsHovered(true)} onPointerLeave={() => setIsHovered(false)}/> 
+            <FontAwesomeIcon icon={props.icon} onPointerEnter={() => setIsHovered(true)} onPointerLeave={() => setIsHovered(false)} onClick={props.func}/> 
         </>
     );
 }

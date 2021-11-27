@@ -1,11 +1,17 @@
 .h1left{
     text-align: left;
+    border-left: 1px dashed black;
 }
 .titleSize{
     font-size: 2em;
 }
+.titleDev{
+    border-top : 1px dashed black;
+    border-bottom: 1px dashed black;
+}
 .text{
     text-align: right;
+    border-right: 1px dashed black;
     font-size: .9em;
     word-break: normal;
 }
@@ -13,7 +19,7 @@
 .letter{
     transition:font-size .5s, color .2s;
 }
-.letter:hover, .letter:focus{
+.letter:hover, .letter:active{
     color:red;
     font-size: 1.2em;
 }

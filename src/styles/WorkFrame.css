@@ -8,6 +8,7 @@ article{
     transition: margin 1s,height .5s, width .5s, top 1s ease, left 1s ease;
     color:white;
 }
+
 .expanded{
     position: absolute;
     left:10%;
@@ -27,7 +28,7 @@ article{
     content: "";
     background-color: black;
     opacity: .4;
-    transition: opacity .7s, height .4s, width .7s;
+    transition: opacity .7s ease-in, height .8s, width .8s;
 }
 #wf-title{
     z-index:2;
@@ -38,8 +39,8 @@ article{
     }
     article{
         background-color: blue;
-        height:50vh;
-        width:10vw;
+        height:65vh;
+        width:7.5vw;
     }
     .expanded{
         position: absolute;

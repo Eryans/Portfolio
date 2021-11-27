@@ -23,7 +23,7 @@ export default function Acceuil() {
                     </h1>
                 </Row>
                 <Row>
-                    <h2 className="col-12 text-center px-0 titleSize">
+                    <h2 className="col-12 text-center px-0 titleSize titleDev">
                         Développeur Web
                     </h2>
                 </Row>

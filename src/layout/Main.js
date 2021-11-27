@@ -34,29 +34,32 @@ export default function Main() {
 
     useEffect(() => {});
 
-    function changeSection(ref, currentColor) {
-        executeScroll(ref);
-        setCurrentColor(() => currentColor);
-    }
-    function changeColorByScroll(e) {
-        // To Do
+    function changeSection(ref) {
+        executeScroll(ref === 0 ? myRef1:
+                    ref === 1 ? myRef2:
+                    ref === 2 ? myRef3: myRef1)
+        setCurrentColor(() => ref);
     }
     const navContent = [
         {
             text: "Acceuil",
             icon: faHome,
+            ref:0
         },
         {
             text: "A propos",
             icon: faComment,
+            ref:0
         },
         {
             text: "Mes Projets",
             icon: faLaptop,
+            ref:1
         },
         {
             text: "Contact",
             icon: faAddressBook,
+            ref:2
         },
     ];
     const navContentSocial = [
@@ -85,17 +88,14 @@ export default function Main() {
                 navContent={navContentSocial}
                 upOrDown="down"
             />
-            <NavBar bsPosition="end-0" navContent={navContent} upOrDown="up" />
+            <NavBar bsPosition="end-0" navContent={navContent} upOrDown="up" func={changeSection} />
             <Container fluid className="">
                 <Row ref={myRef1}>
-                    <Acceuil propFunction={() => changeSection(myRef2, 1)} />
+                    <Acceuil />
                 </Row>
 
                 <Row ref={myRef2} className="d-flex flex-row flex-nowrap">
-                    <Work
-                        propFunction={() => changeSection(myRef1, 0)}
-                        propFunction2={() => changeSection(myRef3, 2)}
-                    />
+                    <Work/>
                 </Row>
 
                 <Row ref={myRef3}>

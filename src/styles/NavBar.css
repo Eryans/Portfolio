@@ -1,6 +1,7 @@
 .nav-container{
     display:none;
     position: fixed;
+    z-index: 1000;
 }
 li{
     list-style: none;
@@ -8,7 +9,7 @@ li{
 .hidden{
     visibility: hidden;
 }
-.up:first-child:last-child::before{
+.up:first-child::before{
     align-self: flex-end;
     margin-right: .5em;
     display: block;

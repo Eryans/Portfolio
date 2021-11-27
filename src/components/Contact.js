@@ -1,11 +1,12 @@
-import ChangeSectionButton from "./ChangeSectionButton";
+import "../styles/Contact.css";
 
 export default function Contact({title,propFunction,propFunction2}){
     return(
-        <section className="block-section col-12 text-white position-relative">
-            <ChangeSectionButton textContent="Up" propFunction={propFunction} isUp={true}/>
+        <>
+        <div className="block-section bg-danger" style={{opacity:0}}/>
+        <section className="block-section parallaxSec col-12 bg-primary">
             <h1>{title}</h1>
-            <ChangeSectionButton textContent="Acceuil" propFunction={propFunction2} isUp={false}/>
         </section>
+        </>
     );
 }

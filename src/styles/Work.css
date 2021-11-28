@@ -1,9 +1,6 @@
 .project-container ul{
     padding: 0;
     scroll-behavior: smooth;
-    max-height: 80%;
-    overflow: scroll;
-    scrollbar-width: none;
 }
 
 .project-container ul li{
@@ -20,8 +17,7 @@
     font-size: 1.5em;
     width: 65%;
     text-align: left;
-    position: absolute;
-    left: 0;
+    left:0;
     top:0;
     margin:.5em;
     border-bottom: 2px solid rgb(138, 138, 138);
@@ -30,6 +26,7 @@
     #w-title{
         font-size: 3em;
         width:50%;
+        position: absolute;
     }
     .project-container ul{
         overflow: visible;

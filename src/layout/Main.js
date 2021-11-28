@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 
 import {
@@ -19,8 +19,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 export default function Main() {
     // This is supposed to handle wheel scroll direction but it doesn't work
-    const wheelDirection = (e) =>
-        e.nativeEvent.wheelDelta > 0 ? "up" : executeScroll(myRef3);
 
     const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
     const executeScroll = (ref) => scrollToRef(ref);
@@ -29,16 +27,10 @@ export default function Main() {
     const myRef2 = useRef();
     const myRef3 = useRef();
 
-    const bgColors = ["#69FFF1", "#63D471", "#233329"];
-    const [currentColor, setCurrentColor] = useState(0);
-
-    useEffect(() => {});
-
     function changeSection(ref) {
         executeScroll(ref === 0 ? myRef1:
                     ref === 1 ? myRef2:
-                    ref === 2 ? myRef3: myRef1)
-        setCurrentColor(() => ref);
+                    ref === 2 ? myRef3: myRef1);
     }
     const navContent = [
         {
@@ -47,7 +39,7 @@ export default function Main() {
             ref:0
         },
         {
-            text: "A propos",
+            text: "À propos",
             icon: faComment,
             ref:0
         },

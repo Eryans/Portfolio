@@ -4,37 +4,57 @@ import "../../styles/Work.css";
 export default function Work({ title, propFunction, propFunction2 }) {
     const content = [
         {
-            name: "name 1",
+            name: "name 1 WATERFALL",
             description: "lorem blablablablablalbal",
             img:"img",
             url:"url"
         },
         {
-            name: "name 2",
+            name: "name 2 for you",
             img:"img",
             description: "lorem blablablablablalbal",
             url:"url"
         },
         {
-            name: "name 3",
+            name: "name 3 for me",
             img:"img",
             description: "lorem blablablablablalbal",
             url:"url"
         },
         {
-            name: "name 4",
+            name: "name 4 for the whore",
             img:"img",
             description: "lorem blablablablablalbal",
             url:"url"
         },
         {
-            name: "name 5",
+            name: "name 5 thumb master",
             img:"img",
             description: "lorem blablablablablalbal",
             url:"url"
         },
         {
-            name: "name 6",
+            name: "name 6 for the dicks",
+            img:"img",
+            description: "lorem blablablablablalbal",
+            url:"url"
+        },
+        {
+            name: "name 7 heaven",
+            img:"img",
+            description: "lorem blablablablablalbal",
+            url:"url"
+        }
+        ,
+        {
+            name: "name 8 mate",
+            img:"img",
+            description: "lorem blablablablablalbal",
+            url:"url"
+        }
+        ,
+        {
+            name: "name 9 rimes",
             img:"img",
             description: "lorem blablablablablalbal",
             url:"url"

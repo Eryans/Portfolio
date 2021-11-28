@@ -1,0 +1,45 @@
+#mdl-container{
+    position: absolute;
+    left:calc(50% - 40%);
+    top:calc(50% - 40%);
+    height:80%;
+    width:80%;
+    z-index:10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.m-section{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: left 1s, top 1s;
+}
+#mdl-1{
+    background-color: blue;
+    left: -10vh;
+}
+#mdl-2{
+    background-color: blueviolet;
+    left: 10vh;
+}
+@media screen and (min-width:576px) {
+    #mdl-container{
+        flex-direction: row;
+    }
+    #mdl-1, #mdl-2{
+        left: 0;
+    }
+    #mdl-1{
+        background-color: blue;
+        top: -10vh;
+    }
+    #mdl-2{
+        background-color: blueviolet;
+        top: 10vh;
+    }
+}

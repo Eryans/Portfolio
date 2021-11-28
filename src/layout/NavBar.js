@@ -8,7 +8,7 @@ export default function NavBar({bsPosition, direction, navContent, upOrDown, fun
         <Nav className={`nav-container ${bsPosition}`}>
             <ul className={`px-3 ${upOrDown} m-0 d-flex flex-column`}>
                 {
-                    navContent.map((x,i) => <li key={i} className={`d-flex ${direction} align-items-center justify-content-end gap-3`}><NavButton text={x.text} icon={x.icon} func={() => func(x.ref)}/></li> )
+                    navContent.map((x,i) => <li key={i} className={`d-flex ${direction} align-items-center justify-content-end gap-3`}><NavButton text={x.text} icon={x.icon} link={x.link}/></li> )
                 }
             </ul>
         </Nav>

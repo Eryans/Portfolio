@@ -15,22 +15,22 @@ export const navContent = [
     {
         text: "Acceuil",
         icon: faHome,
-        ref:0
+        link:"#acceuil"
     },
     {
         text: "À propos",
         icon: faComment,
-        ref:0
+        link:"#acceuil"
     },
     {
         text: "Mes Projets",
         icon: faLaptop,
-        ref:1
+        link:"#work"
     },
     {
         text: "Contact",
         icon: faAddressBook,
-        ref:2
+        link:"#contact"
     },
 ];
 export const navContentSocial = [

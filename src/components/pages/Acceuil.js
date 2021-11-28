@@ -3,7 +3,7 @@ import { Container, Row } from "react-bootstrap";
 import Modal from "../Modal";
 import "../../styles/Acceuil.css";
 
-export default function Acceuil() {
+export default function Acceuil({reference}) {
 
     const name = "Jules";
     const lastName = "Noir--Vermeulen";
@@ -13,7 +13,7 @@ export default function Acceuil() {
     const modalContent = require("../../data/about-data.json");
 
     return (
-        <section className="bg-white block-section position-relative">
+        <section id="acceuil" ref={reference} className="bg-white block-section position-relative">
             <Container className="p-0 title-container">
                 <Row>
                     <span className="col-6 p-0" />

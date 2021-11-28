@@ -3,9 +3,9 @@ import "../../styles/Work.css";
 import { content } from "../../data/work-data";
 
 
-export default function Work({ title, propFunction, propFunction2 }) {
+export default function Work({reference}) {
     return (
-        <section className="block-section bg-white position-relative project-container">
+        <section id="work" ref={reference} className="block-section bg-white position-relative project-container">
             <h1 id="w-title">Mes travaux</h1>
                 <ul className="d-flex flex-column flex-md-row justify-content-center align-items-center gap-md-4 gap-3">
                     {

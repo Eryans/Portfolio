@@ -7,6 +7,9 @@ import Contact from "../components/pages/Contact";
 import NavBar from "./NavBar";
 
 import { navContent, navContentSocial } from "../data/nav-data";
+
+import "../styles/Main.css"
+
 export default function Main() {
     // This is supposed to handle wheel scroll direction but it doesn't work
 
@@ -32,7 +35,7 @@ export default function Main() {
                 upOrDown="down"
             />
             <NavBar bsPosition="end-0" navContent={navContent} upOrDown="up" func={changeSection} />
-            <Container fluid className="">
+            <Container fluid id="content-container">
                 <Row ref={myRef1}>
                     <Acceuil />
                 </Row>

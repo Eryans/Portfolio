@@ -22,10 +22,11 @@
 #mdl-1{
     height: fit-content;
     padding:2em;
-    background-color: gray;
+    background-color: #153751 ;
     left: -10vh;
     height:70%;
     border-radius: 4px 4px 0 0;
+    overflow: scroll;
 }
 #mdl-2{
     height:fit-content;
@@ -39,7 +40,7 @@
     flex-direction: column;
     justify-content: center;
 }
-.mdl-text{
+#mdl-text{
     font-size: .85em;
     margin:auto;
     text-align: start;
@@ -59,14 +60,20 @@
 #tech-list li{
     margin:.2em;
 }
+#bio{
+    margin-top:10em; /* Doing this because overflow scroll will hide the top part of the text for some reasons */
+}
 @media screen and (min-width:992px) {
+    #bio{
+        margin-top: 0; /* Removing ridiculous margin top fix aka Frozen Bandaid on a leaking gaz pipe*/
+    }
     #tech-list{
         font-size: 1.25em;
     }
     #mdl-title{
         font-size:3em;
     }
-    .mdl-text{
+    #mdl-text{
         width:60%;
         margin:auto;
         text-align: start;
@@ -85,5 +92,6 @@
     }
     #mdl-1{
         border-radius: 4px 0 0 4px;
+        overflow: visible;
     }
 }

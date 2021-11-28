@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { Container, Row } from "react-bootstrap";
 
 
@@ -13,6 +13,12 @@ import "../styles/Main.css"
 
 export default function Main() {
 
+    const [showModal,setShowModal] = useState(false);
+
+    function displayModal(bool){
+        setShowModal(bool);
+    }
+
     return (
         <main>
             <NavBar
@@ -20,11 +26,12 @@ export default function Main() {
                 direction="flex-row-reverse"
                 navContent={navContentSocial}
                 upOrDown="down"
+                isNav={false}
             />
-            <NavBar bsPosition="end-0" navContent={navContent} upOrDown="up"/>
+            <NavBar bsPosition="end-0" navContent={navContent} upOrDown="up" isNav={true} func={setShowModal}/>
             <Container fluid id="content-container">
                 <Row >
-                    <Acceuil/>
+                    <Acceuil showModal={showModal} modalFunc={displayModal}/>
                 </Row>
 
                 <Row  className="d-flex flex-row flex-nowrap">

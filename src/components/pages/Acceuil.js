@@ -1,19 +1,17 @@
 import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
+import {modalContent} from "../../data/about-data"
 import Modal from "../Modal";
 import "../../styles/Acceuil.css";
 
-export default function Acceuil({reference}) {
+export default function Acceuil({reference, showModal,modalFunc}) {
 
     const name = "Jules";
     const lastName = "Noir--Vermeulen";
 
-    const [showModal,setShowModal] = useState(false);
-
-    const modalContent = require("../../data/about-data.json");
 
     return (
-        <section id="acceuil" ref={reference} className="bg-white block-section position-relative">
+        <section id="acceuil" ref={reference} className="block-section position-relative">
             <Container className="p-0 title-container">
                 <Row>
                     <span className="col-6 p-0" />
@@ -33,21 +31,18 @@ export default function Acceuil({reference}) {
                         Développeur Web
                     </h2>
                 </Row>
-                <Row>
+                <Row className="position-relative">
                     <p className="col-6 px-0 text lead">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
+                        {modalContent[2].text}
                     </p>
+                    <div className="about col-6 " onClick={() => modalFunc(true)}>À propos</div>
                 </Row>
                 <Row className="bottom-0 text-center m-3">
-                    <div className="about" onClick={() => setShowModal(true)}>
-                        <p className="m-0">À propos</p>
-                    </div>
+                    
                 </Row>
             </Container>
             {
-                showModal && <Modal func={() => setShowModal(false)} title1={modalContent[0].title} text1={modalContent[0].text} title2={modalContent[1].title} text2={modalContent[1].text}/>
+                showModal && <Modal func={() => modalFunc(false)} title1={modalContent[0].title} text1={modalContent[0].text} title2={modalContent[1].title} text2={modalContent[1].text}/>
             }
         </section>
     );

@@ -14,33 +14,32 @@
     text-align: right;
     border-right: 1px dashed black;
     font-size: .9em;
-    word-break: normal;
 }
 
 .letter{
     transition:font-size .5s, color .2s;
 }
 .letter:hover, .letter:active{
-    color:red;
+    color:#00fff2;
     font-size: 1.2em;
 }
 .about{
-    position: absolute;
-    background-color: rgb(82, 82, 82);
-    color:white;
-    font-size: 1.5em;
+    position:absolute;
+    font-size: 1em;
     transition: font-size .5s;
     width:fit-content !important; /* I dont like it but i need !important to override bootstrap class*/
-    margin:1em;
-    right: 0;
-    bottom: 0;
-    border-radius: 4px;
+    top:30%;
+    left:65%;
+    border-bottom: 1px dashed gray;
 }
 .about:hover{
+    color:#00fff2;
     font-size: 1.7em;
 }
 @media screen and (min-width:576px) {
-
+    .about{
+        font-size: 1.2em;
+    }
     .h1left{
         text-align: left;
     }

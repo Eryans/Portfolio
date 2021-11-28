@@ -8,5 +8,6 @@
 }
 
 .block-section{
+    background:#102B3F;
     scroll-snap-align: start;
 }

@@ -45,7 +45,7 @@ export default function Modal({ func, title1, text1, title2, text2 }) {
                 />
                 <div className="opacity-anim" style={{ opacity: textOpacity,height:containerHeight }}>
                     <h2 id="mdl-title" className="mdl-text mb-2 mb-md-5">{title1}</h2>
-                    <p className="mdl-text">{text1}</p>
+                    <p id="mdl-text">{text1}</p>
                 </div>
             </section>
             <section
@@ -53,7 +53,7 @@ export default function Modal({ func, title1, text1, title2, text2 }) {
                 className="m-section"
                 style={{ top: destination2, left: destination2 }}
             >
-                <div className="opacity-anim" style={{ opacity: textOpacity,height:containerHeight }}>
+                <div className="opacity-anim" style={{ opacity: textOpacity,height:containerHeight,color:"black"}}>
                     <h2 id="mdl-title">{title2}</h2>
                     <ul id="tech-list">
                         { tech_data.map((x,i) => <li key={i}><Tech title={x.name} img={x.logo}/></li>)}

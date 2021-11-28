@@ -37,17 +37,16 @@ export const navContentSocial = [
     {
         text: "GitHub",
         icon: faGithub,
+        link:"https://github.com/Eryans/Memory-Card-Game"
     },
     {
         text: "Twitter",
         icon: faTwitter,
+        link:"https://twitter.com/JulesNoir"
     },
     {
         text: "Linkedin",
         icon: faLinkedin,
-    },
-    {
-        text: "Something",
-        icon: faAddressBook,
-    },
+        link:"https://www.linkedin.com/in/jules-noir-354350220/"
+    }
 ];

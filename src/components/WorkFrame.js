@@ -62,7 +62,7 @@ export default function WorkFrame({ name, url, description, img}) {
             {!isExpanded && <h3 id="wf-title">{name}</h3>}
             <section className="p-2"style={{backgroundColor:isExpanded && "rgba(0,0,0,.75)",borderRadius:"5px"}}>
                 {isExpanded && (
-                    <div className="frame-content">
+                    <div id="frame-content">
                         <h3 id="wf-title">{name}</h3>
                         <p>{description}</p>
                         <a href={url} alt="Lien vers projet">

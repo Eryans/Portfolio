@@ -1,22 +1,12 @@
 import { useRef } from "react";
 import { Container, Row } from "react-bootstrap";
 
-import {
-    faLaptop,
-    faHome,
-    faComment,
-    faAddressBook,
-} from "@fortawesome/free-solid-svg-icons";
-
 import Acceuil from "../components/pages/Acceuil";
 import Work from "../components/pages/Work";
 import Contact from "../components/pages/Contact";
 import NavBar from "./NavBar";
-import {
-    faGithub,
-    faLinkedin,
-    faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
+
+import { navContent, navContentSocial } from "../data/nav-data";
 export default function Main() {
     // This is supposed to handle wheel scroll direction but it doesn't work
 
@@ -32,46 +22,7 @@ export default function Main() {
                     ref === 1 ? myRef2:
                     ref === 2 ? myRef3: myRef1);
     }
-    const navContent = [
-        {
-            text: "Acceuil",
-            icon: faHome,
-            ref:0
-        },
-        {
-            text: "À propos",
-            icon: faComment,
-            ref:0
-        },
-        {
-            text: "Mes Projets",
-            icon: faLaptop,
-            ref:1
-        },
-        {
-            text: "Contact",
-            icon: faAddressBook,
-            ref:2
-        },
-    ];
-    const navContentSocial = [
-        {
-            text: "GitHub",
-            icon: faGithub,
-        },
-        {
-            text: "Twitter",
-            icon: faTwitter,
-        },
-        {
-            text: "Linkedin",
-            icon: faLinkedin,
-        },
-        {
-            text: "Something",
-            icon: faAddressBook,
-        },
-    ];
+
     return (
         <main>
             <NavBar

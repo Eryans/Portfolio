@@ -8,7 +8,7 @@ li{
     font-size: 1.7em;
     transition: font-size .5s;
 }
-li:hover{
+.nav-container li:hover{
     font-size: 2.5em;
 }
 .hidden{

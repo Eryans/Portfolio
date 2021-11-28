@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import "../styles/WorkFrame.css";
 
-export default function WorkFrame({ name, url, img, description }) {
+export default function WorkFrame({ name, url, description, img}) {
 
     const [isExpanded, setIsExpanded] = useState(false);
     const [expandedClassName, setExpandedClassName] = useState("");
@@ -32,12 +32,13 @@ export default function WorkFrame({ name, url, img, description }) {
         <article
             class={`d-flex justify-content-center align-items-center ${expandedClassName}`}
             onClick={() => !isExpanded && setIsExpanded(true)}
-            style={{
+            style={{ // Text Orientation for desktop or mobile
                 writingMode:
                     !isExpanded && screenWidth > 768
                         ? "vertical-lr"
                         : "horizontal-tb",
                 textOrientation: !isExpanded && screenWidth > 768 && "upright",
+                backgroundImage:`url(${img})`
             }}
             onPointerEnter={() => !isExpanded && displayOverlay(overlayRef, false)} // Only check when cards are not expanded to avoid crash
             onPointerLeave={() => !isExpanded && displayOverlay(overlayRef, true)} // Because ref is null when isExtended = true
@@ -48,6 +49,9 @@ export default function WorkFrame({ name, url, img, description }) {
                         background: "none",
                         border: "none",
                         color: "white",
+                        backgroundColor:"rgba(0,0,0,.75)",
+                        borderRadius:"5px",
+                        marginBottom:".5em"
                     }}
                     onClick={() => setIsExpanded(false)}
                 >
@@ -55,16 +59,18 @@ export default function WorkFrame({ name, url, img, description }) {
                 </button>
             )}
             {!isExpanded && <div ref={overlayRef} className="overlay" />}
-            <h3 id="wf-title">{name}</h3>
-            {img && <img src={img} alt="Illustration Projet" />}
-            {isExpanded && (
-                <div className="frame-content">
-                    <p>{description}</p>
-                    <a href={url} alt="Lien vers projet">
-                        {" "}
-                    </a>
-                </div>
-            )}
+            {!isExpanded && <h3 id="wf-title">{name}</h3>}
+            <section className="p-2"style={{backgroundColor:isExpanded && "rgba(0,0,0,.75)",borderRadius:"5px"}}>
+                {isExpanded && (
+                    <div className="frame-content">
+                        <h3 id="wf-title">{name}</h3>
+                        <p>{description}</p>
+                        <a href={url} alt="Lien vers projet">
+                            {url}
+                        </a>
+                    </div>
+                )}
+            </section>
         </article>
     );
 }

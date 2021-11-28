@@ -10,6 +10,7 @@ export default function Acceuil() {
 
     const [showModal,setShowModal] = useState(false);
 
+    const modalContent = require("../../data/about-data.json");
 
     return (
         <section className="bg-white block-section position-relative">
@@ -39,14 +40,14 @@ export default function Acceuil() {
                         industry's standard dummy text ever since the 1500s.
                     </p>
                 </Row>
-                <Row className="position-absolute bottom-0 w-100 text-center">
+                <Row className="bottom-0 text-center m-3">
                     <div className="about" onClick={() => setShowModal(true)}>
-                        <p>À propos</p>
+                        <p className="m-0">À propos</p>
                     </div>
                 </Row>
             </Container>
             {
-                showModal && <Modal func={() => setShowModal(false)}/>
+                showModal && <Modal func={() => setShowModal(false)} title1={modalContent[0].title} text1={modalContent[0].text} title2={modalContent[1].title} text2={modalContent[1].text}/>
             }
         </section>
     );

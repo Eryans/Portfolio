@@ -1,12 +1,14 @@
 article{
     position: relative;
-    background-color: blue;
     height:10vh;
     width:70vw;
     top:0;
     left:0;
     transition: margin 1s,height .5s, width .5s, top 1s ease, left 1s ease;
     color:white;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .expanded{
@@ -29,16 +31,16 @@ article{
     background-color: black;
     opacity: .4;
     transition: opacity .7s ease-in, height .8s, width .8s;
+    z-index:3;
 }
 #wf-title{
-    z-index:2;
+    z-index:4;
 }
 @media screen and (min-width:768px) {
     .overlay{
         opacity: .6;
     }
     article{
-        background-color: blue;
         height:65vh;
         width:7.5vw;
     }

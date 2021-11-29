@@ -1,18 +1,18 @@
 .h1left{
     text-align: left;
-    border-left: 1px dashed black;
+    border-left: 1px dashed rgb(255, 255, 255);
 }
 .titleSize{
     font-size: 2em;
     margin: 0;
 }
 .titleDev{
-    border-top : 1px dashed black;
-    border-bottom: 1px dashed black;
+    border-top : 1px dashed rgb(255, 255, 255);
+    border-bottom: 1px dashed rgb(255, 255, 255);
 }
 .text{
     text-align: right;
-    border-right: 1px dashed black;
+    border-right: 1px dashed rgb(255, 255, 255);
     font-size: .9em;
 }
 

@@ -8,7 +8,7 @@ export default function NavButton(props) {
 
     return (
         <>
-            <p className={`${!isHovered && "hidden"}`}>{props.text}</p>
+            <p className={`${!isHovered && "hidden"} text-white`}>{props.text}</p>
             {
                 props.isNav &&
                 <Link to={"/pathLink"+props.link} smooth className="link">

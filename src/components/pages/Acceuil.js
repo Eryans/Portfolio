@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Container, Row } from "react-bootstrap";
 import {modalContent} from "../../data/about-data"
 import Modal from "../Modal";

@@ -37,7 +37,7 @@ export const navContentSocial = [
     {
         text: "GitHub",
         icon: faGithub,
-        link:"https://github.com/Eryans/Memory-Card-Game"
+        link:"https://github.com/Eryans/"
     },
     {
         text: "Twitter",

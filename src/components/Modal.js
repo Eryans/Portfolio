@@ -3,7 +3,7 @@ import "../styles/Modal.css";
 import Tech from "./Tech";
 import { tech_data } from "../data/tech-data";
 
-export default function Modal({ func, title1, text1, title2, text2 }) {
+export default function Modal({ func, title1, text1, title2 }) {
     const [destination, setDestination] = useState("-100vh");
     const [destination2, setDestination2] = useState("100vh");
     const [textOpacity, setTextOpacity] = useState(0);

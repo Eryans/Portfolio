@@ -24,6 +24,7 @@ export default function Modal({ func, title1, text1, title2 }) {
         } else {
             setDestination("-100vh");
             setDestination2("100vh");
+            setTextOpacity(0);
         }
     }
     function closeModal() {
@@ -39,10 +40,7 @@ export default function Modal({ func, title1, text1, title2 }) {
                 className="m-section"
                 style={{ top: destination, left: destination }}
             >
-                <button
-                    className="position-absolute top-0 m-2 start-0 btn-close"
-                    onClick={closeModal}
-                />
+                
                 <div className="opacity-anim" style={{ opacity: textOpacity,height:containerHeight }}>
                     <h2 id="mdl-title" className="mdl-text mb-2 mb-md-5">{title1}</h2>
                     <p id="mdl-text">{text1}</p>
@@ -60,6 +58,11 @@ export default function Modal({ func, title1, text1, title2 }) {
                     </ul>
                 </div>
             </section>
+            <button
+                    className="position-absolute top-0 m-2 start-0 btn-close opacity-anim"
+                    onClick={closeModal}
+                    style={{opacity:textOpacity}}
+                />
         </div>
     );
 }

@@ -63,21 +63,27 @@
 #bio{
     margin-top:10em; /* Doing this because overflow scroll will hide the top part of the text for some reasons */
 }
+
+@media screen and (min-width:578px){
+    #bio{
+        font-size: 1.5em;
+    }
+}
 @media screen and (min-width:992px) {
     #bio{
         margin-top: 0; /* Removing ridiculous margin top fix aka Frozen Bandaid on a leaking gaz pipe*/
     }
     #tech-list{
-        font-size: 1.25em;
+        font-size: 1em;
     }
     #mdl-title{
         font-size:3em;
     }
     #mdl-text{
-        width:60%;
+        width:70%;
         margin:auto;
         text-align: start;
-        font-size:1.75em;
+        font-size:1em;
     }
     #mdl-container{
         flex-direction: row;
@@ -93,5 +99,10 @@
     #mdl-1{
         border-radius: 4px 0 0 4px;
         overflow: visible;
+    }
+}
+@media (min-height:578px){
+    #bio{
+        margin-top: .1em;
     }
 }

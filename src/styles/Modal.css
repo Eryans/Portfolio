@@ -69,7 +69,7 @@
         font-size: 1.5em;
     }
 }
-@media screen and (min-width:992px) {
+@media screen and (min-width:1200px) {
     #bio{
         margin-top: 0; /* Removing ridiculous margin top fix aka Frozen Bandaid on a leaking gaz pipe*/
     }

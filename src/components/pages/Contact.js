@@ -5,7 +5,7 @@ import NavButton from "../NavButton";
 export default function Contact({title,reference}){
     return(
         <section id="contact" ref={reference} className="block-section parallaxSec col-12">
-            <h2>Contactez moi : <a id="mail-link" href="mailto: julesnoir@gmail.com">julesnoir@gmail.com</a> !</h2>
+            <h2>Contactez moi : <a id="mail-link" href="mailto: julesnoir.vermeulen@gmail.com">julesnoir.vermeulen@gmail.com</a> !</h2>
             <ul id="socialmedia" className="d-flex justify-content-center ">
             {navContentSocial.map((x,i)=> <li key={i}> <NavButton icon={x.icon} link={x.link} isNav={false} modalFunc={ null }/> </li>)}
             </ul>

@@ -2,6 +2,7 @@ import cardBackground from  "../images/cards.jpg";
 import starwarsBackground from "../images/starwars.jpg";
 import tdgBackground from "../images/terredegeek.jpg";
 import norimmoBackground from "../images/norimmobg.jpg";
+import bankBackground from "../images/money.jpg";
 
 export const content = [
     {
@@ -9,6 +10,12 @@ export const content = [
         description: "Un jeu de mémoire réalisé en javascript pendant ma formation à l'AFPA",
         img: cardBackground,
         url:"https://github.com/Eryans/Memory-Card-Game"
+    },
+    {
+        name: "Money Manager (WIP)",
+        description: "Projet fil rouge de la formation, il s'agit d'une application bancaire réalisé en php avec gestion de base de données.",
+        img: bankBackground,
+        url:"https://github.com/Eryans/MoneyManager/tree/dev_oop_mvc"
     },
     {
         name: "Star Wiki",

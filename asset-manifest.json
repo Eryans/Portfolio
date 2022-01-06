@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.5492f86c.chunk.css",
-    "main.js": "/Portfolio/static/js/main.b3b70daa.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.b3b70daa.chunk.js.map",
+    "main.js": "/Portfolio/static/js/main.a6b80f98.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.a6b80f98.chunk.js.map",
     "runtime-main.js": "/Portfolio/static/js/runtime-main.3aab8d97.js",
     "runtime-main.js.map": "/Portfolio/static/js/runtime-main.3aab8d97.js.map",
     "static/css/2.4659568d.chunk.css": "/Portfolio/static/css/2.4659568d.chunk.css",
@@ -15,6 +15,7 @@
     "static/css/main.5492f86c.chunk.css.map": "/Portfolio/static/css/main.5492f86c.chunk.css.map",
     "static/js/2.a08e9511.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.a08e9511.chunk.js.LICENSE.txt",
     "static/media/cards.245d62e9.jpg": "/Portfolio/static/media/cards.245d62e9.jpg",
+    "static/media/money.ca83e1fc.jpg": "/Portfolio/static/media/money.ca83e1fc.jpg",
     "static/media/norimmobg.750c4c0f.jpg": "/Portfolio/static/media/norimmobg.750c4c0f.jpg",
     "static/media/starwars.6546b138.jpg": "/Portfolio/static/media/starwars.6546b138.jpg",
     "static/media/terredegeek.da550626.jpg": "/Portfolio/static/media/terredegeek.da550626.jpg"
@@ -24,6 +25,6 @@
     "static/css/2.4659568d.chunk.css",
     "static/js/2.a08e9511.chunk.js",
     "static/css/main.5492f86c.chunk.css",
-    "static/js/main.b3b70daa.chunk.js"
+    "static/js/main.a6b80f98.chunk.js"
   ]
 }

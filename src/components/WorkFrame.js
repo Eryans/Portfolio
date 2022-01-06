@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
+import {faGithub} from "@fortawesome/free-brands-svg-icons";
 import "../styles/WorkFrame.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WorkFrame({ name, url, description, img}) {
 
@@ -65,8 +67,8 @@ export default function WorkFrame({ name, url, description, img}) {
                     <div id="frame-content">
                         <h3 id="wf-title">{name}</h3>
                         <p>{description}</p>
-                        <a href={url} alt="Lien vers projet">
-                            {url}
+                        <a href={url} alt="Lien vers github">
+                            <FontAwesomeIcon icon={faGithub}/>
                         </a>
                     </div>
                 )}

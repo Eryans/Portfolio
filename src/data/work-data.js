@@ -8,7 +8,7 @@ export const content = [
         name: "Memory Game",
         description: "Un jeu de mémoire réalisé en javascript pendant ma formation à l'AFPA",
         img: cardBackground,
-        url:"https://eryans.github.io/Memory-Card-Game/"
+        url:"https://github.com/Eryans/Memory-Card-Game"
     },
     {
         name: "Star Wiki",
@@ -20,12 +20,12 @@ export const content = [
         name: "Terre de Geek",
         description: "Un site d'e-commerce responsif réalisé comme premier projet front-end html/css seulement",
         img: tdgBackground,
-        url:"https://eryans.github.io/TerreDeGeek/"
+        url:"https://github.com/Eryans/TerreDeGeek"
     },
     {
         name: "NorImmo",
         description: "Une appli d'une fausse agence immoblière réalisé en projet de groupe. code 100% fonctionnel, design 100% volontairement moche",
         img: norimmoBackground,
-        url:"https://eryans.github.io/NorImmo/"
+        url:"https://github.com/Eryans/NorImmo"
     }
 ]

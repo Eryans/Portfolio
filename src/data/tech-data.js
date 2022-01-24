@@ -5,6 +5,7 @@ import {
     faCss3,
     faPhp,
     faSymfony,
+    faLinux
 } from "@fortawesome/free-brands-svg-icons";
 
 export const tech_data = [
@@ -31,5 +32,9 @@ export const tech_data = [
     {
         logo: faSymfony,
         name: "Symfony",
+    },
+    {
+        logo: faLinux,
+        name: "Ubuntu",
     },
 ];

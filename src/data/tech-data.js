@@ -7,7 +7,7 @@ import {
     faSymfony,
     faLinux
 } from "@fortawesome/free-brands-svg-icons";
-
+import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 export const tech_data = [
     {
         logo: faReact,
@@ -32,6 +32,10 @@ export const tech_data = [
     {
         logo: faSymfony,
         name: "Symfony",
+    },
+    {
+        logo: faDatabase,
+        name: "MySQL",
     },
     {
         logo: faLinux,
